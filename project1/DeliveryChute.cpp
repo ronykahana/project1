@@ -20,15 +20,32 @@ Project1::DeliveryChute::~DeliveryChute() {
 
 bool Project1::DeliveryChute::insertProduct(Product *pProduct) {
   // TODO: Implement
-  return false;
+  if(this->pProduct==0){
+    this->pProduct = *pProduct;
+    return true;
+  }else{
+    this->statusPanel = ESSAGECODE_CHUTE_FULL;
+    return false;
+  }
+  
 }
 
 Project1::Product *Project1::DeliveryChute::retrieveProduct() {
   // TODO: Implement
-  return 0;
+  if(pProduct == 0){
+    return 0;
+  }else{
+  Product *temp = this->pProduct; //copy value of pProduct
+  this->pProduct = 0; //sets product back to 0 since product was retrieved
+  return temp; //returns the previous value (not 0) or pProduct
+  }
 }
 
 bool Project1::DeliveryChute::containsProduct() const {
   // TODO: Implement
+  if(pProduct>0){
+    return true;
+  }else{
   return false;
+  }
 }
