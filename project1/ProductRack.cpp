@@ -25,6 +25,7 @@ Project1::ProductRack::ProductRack(
 
 Project1::ProductRack::~ProductRack()
 {
+    deleate[] ProductRack;
     // TODO: Implement
 }
 
@@ -38,13 +39,24 @@ Project1::ProductRack::isCompatibleProduct(const char *productName) const
 bool
 Project1::ProductRack::isFull() const
 {
+    if(this->productCount == MAX_PRODUCTS){
+        cout<<"\nProduct rack is full.\n"
+        returns true;
+    }else{
+        cout<<"\nProduct rack has room for "<< MAX_PRODUCTS - (this->productCount)<<" more products.\n"
+        returns false;
+    }
+    
     // TODO: Implement
-    return false;
 }
 
 bool
 Project1::ProductRack::isEmpty() const
-{
+{   if(this->productCount>0){ //checks if count is bigger than zero
+        return false; //if yes, returns not Empty
+    }else{
+        return true; //else returns is Empty
+    }
     // TODO: Implement
     return false;
 }
