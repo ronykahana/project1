@@ -64,6 +64,15 @@ Project1::ProductRack::isEmpty() const
 bool
 Project1::ProductRack::addProduct(Product* pProduct)
 {
+    if(!isFull){ //if not full
+        this->Product.push(pProduct);
+        this->productCount+=this->productCount; //add a product
+
+        return true;
+
+    }else{
+        return false; //else return false
+    }
     // TODO: Implement
     return false;
 }
