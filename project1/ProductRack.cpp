@@ -65,8 +65,9 @@ bool
 Project1::ProductRack::addProduct(Product* pProduct)
 {
     if(!isFull){ //if not full
-        this->Product.push(pProduct);
-        this->productCount+=this->productCount; //add a product
+        this->products.push(pProduct); //add a product to the array
+        this->productCount = this->products.size(); //update product count
+        //this->productCount+=this->productCount; 
 
         return true;
 
@@ -88,12 +89,12 @@ unsigned
 Project1::ProductRack::getNumProductsInRack() const
 {
     // TODO: Implement
-    return 0;
+    return productCount;
 }
 
 unsigned
 Project1::ProductRack::getProductPriceCents() const
 {
     // TODO: Implement
-    return 0;
+    return this->productPriceCents;
 }
