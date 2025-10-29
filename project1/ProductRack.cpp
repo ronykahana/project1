@@ -81,8 +81,14 @@ Project1::ProductRack::addProduct(Product* pProduct)
 bool
 Project1::ProductRack::deliverProduct()
 {
+    if(this->getNumProductsInRack()>0){
+        return true;
+    }else{
+        cerr<<"No products.\n";
+        return false;
+    }
    // TODO: Implement
-    return false;
+    
 }
 
 unsigned
