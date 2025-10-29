@@ -9,6 +9,9 @@
 
 Project1::DeliveryChute::DeliveryChute(StatusPanel &statusPanel)
     : statusPanel(statusPanel), pProduct(0) {
+      cout<<"Initializing a Delivery Chute.\n";
+      cout<<"Status panel: "<<this->statusPanel<<endl;
+      cout<<"Product: "<<this->pProduct<<endl;
   // TODO: Implement
 }
 
@@ -20,11 +23,13 @@ Project1::DeliveryChute::~DeliveryChute() {
 
 bool Project1::DeliveryChute::insertProduct(Product *pProduct) {
   // TODO: Implement
+  cout>>"Insert product.\n"
+
   if(this->pProduct==0){
     this->pProduct = *pProduct;
     return true;
   }else{
-    this->statusPanel = ESSAGECODE_CHUTE_FULL;
+    this->statusPanel.displayMessage(ESSAGECODE_CHUTE_FULL);
     return false;
   }
   

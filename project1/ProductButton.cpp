@@ -19,13 +19,16 @@ Project1::ProductButton::ProductButton(ProductRack &productRack)
 bool
 Project1::ProductButton::press()
 {
+    this->&productRack.deliverProduct();
     // TODO: Implement
-    return false;
+    //return false;
 }
 
 unsigned
 Project1::ProductButton::getProductPriceCents() const
 {
+    cout>>"Return price in cents.\n";
+    this->&productRack.getProductPriceCents;
     // TODO: Implement
-    return 0;
+    //return 0;
 }

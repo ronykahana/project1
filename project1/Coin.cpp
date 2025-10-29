@@ -42,10 +42,12 @@ Project1::Coin::Coin(CoinType denomination) : denomination(denomination) {
 }
 
 Project1::Coin::CoinType Project1::Coin::getDenomination() const {
+  cout<<"Returning denomination.\n"
   return denomination;
 }
 
 unsigned Project1::Coin::getValueCents() const {
   // TODO: Implement
+  cout<<"Returning cent value from enum.\n"
 return static_cast<unsigned>(denomination);
 }
