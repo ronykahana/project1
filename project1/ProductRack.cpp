@@ -57,7 +57,6 @@ Project1::ProductRack::isEmpty() const
     }else{
         return true; //else returns is Empty
     }
-    // TODO: Implement
     return false;
 }
 
@@ -74,15 +73,16 @@ Project1::ProductRack::addProduct(Product* pProduct)
     }else{
         return false; //else return false
     }
-    // TODO: Implement
     return false;
 }
 
 bool
 Project1::ProductRack::deliverProduct()
 {
-    if(this->getNumProductsInRack()>0){
-        return true;
+    if(this.getNumProductsInRack()>0){
+        this->productCount = this->productCount -1; //reducing the num of products after product delivery
+       // products.front(). //get price
+        return products.pop();
     }else{
         cerr<<"No products.\n";
         return false;
@@ -94,13 +94,12 @@ Project1::ProductRack::deliverProduct()
 unsigned
 Project1::ProductRack::getNumProductsInRack() const
 {
-    // TODO: Implement
     return productCount;
 }
 
 unsigned
 Project1::ProductRack::getProductPriceCents() const
 {
-    // TODO: Implement
+    if(this->
     return this->productPriceCents;
 }
