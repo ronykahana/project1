@@ -50,11 +50,11 @@ int main() {
   cout<<"Test ProductRack, ";
   Project1UnitTest::TestProductRack();
   //cout<<"Test button, ";
-  // Project1UnitTest::TestProductButton();
+   Project1UnitTest::TestProductButton();
   //cout<<"Test panel, ";
-  // Project1UnitTest::TestStatusPanel();
+   Project1UnitTest::TestStatusPanel();
   //cout<<"Vending machine, ";
-  // Project1UnitTest::TestVendingMachine();
+   Project1UnitTest::TestVendingMachine();
 
   // Display test results
    Project1UnitTest::DisplaySummary();
