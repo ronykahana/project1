@@ -41,22 +41,15 @@ int main() {
   Project1UnitTest::Initialize(cout);
 
   // Run tests
-  cout<<"Test Coin, ";
-  Project1UnitTest::TestCoin();
-  cout<<"Test Product, ";
+   Project1UnitTest::TestCoin();
   Project1UnitTest::TestProduct();
-  cout<<"Test Chute, ";
    Project1UnitTest::TestDeliveryChute();
-  cout<<"Test ProductRack, ";
-  Project1UnitTest::TestProductRack();
-  cout<<"Test button, ";
+   Project1UnitTest::TestProductRack();
    Project1UnitTest::TestProductButton();
-  cout<<"Test panel, ";
    Project1UnitTest::TestStatusPanel();
-  cout<<"Vending machine, ";
    Project1UnitTest::TestVendingMachine();
 
-  Display test results
+  // Display test results
    Project1UnitTest::DisplaySummary();
 
   // Wait for user response
