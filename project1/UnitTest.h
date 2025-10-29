@@ -31,15 +31,15 @@ using std::ostream;
 
 namespace Project1UnitTest {
 void Initialize(ostream &out);
-// void DisplaySummary();
+ void DisplaySummary();
 void TestNothing();
-// void TestCoin();
+ void TestCoin();
 void TestProduct();
-// void TestDeliveryChute();
-// void TestProductRack();
-// void TestProductButton();
-// void TestStatusPanel();
-// void TestVendingMachine();
+void TestDeliveryChute();
+void TestProductRack();
+void TestProductButton();
+void TestStatusPanel();
+void TestVendingMachine();
 } // namespace Project1UnitTest
 
 #endif
