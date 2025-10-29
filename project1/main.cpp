@@ -49,14 +49,14 @@ int main() {
    Project1UnitTest::TestDeliveryChute();
   cout<<"Test ProductRack, ";
   Project1UnitTest::TestProductRack();
-  //cout<<"Test button, ";
+  cout<<"Test button, ";
    Project1UnitTest::TestProductButton();
-  //cout<<"Test panel, ";
+  cout<<"Test panel, ";
    Project1UnitTest::TestStatusPanel();
-  //cout<<"Vending machine, ";
+  cout<<"Vending machine, ";
    Project1UnitTest::TestVendingMachine();
 
-  // Display test results
+  Display test results
    Project1UnitTest::DisplaySummary();
 
   // Wait for user response
