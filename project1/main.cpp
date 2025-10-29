@@ -24,25 +24,25 @@ using std::endl;
 #include "UnitTest.h"
 
 int main() {
-  /*
+  ///*
   // Uncomment this section and the section at the start of this file to
   // dump a memory leak report at program termination when using Visual
   // Studio.
   _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
-  */
+  //*/
 
-  /*
+ // /*
   // Uncomment this section to set a memory-allocation breakpoint at the
   // given memory allocation number when using Visual Studio.
   _CrtSetBreakAlloc(947);
-  */
+  //*/
 
   // Initialize
   Project1UnitTest::Initialize(cout);
 
   // Run tests
    Project1UnitTest::TestCoin();
-  Project1UnitTest::TestProduct();
+   Project1UnitTest::TestProduct();
    Project1UnitTest::TestDeliveryChute();
    Project1UnitTest::TestProductRack();
    Project1UnitTest::TestProductButton();
